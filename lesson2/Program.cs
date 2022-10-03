@@ -22,7 +22,7 @@ void Zadacha13(){
     int number = Math.Abs(Convert.ToInt32(Console.ReadLine()));
     if (number/100 > 0)
     {
-        while (number > 1000)
+        while (number > 999)
         {
             number = number/10;
         }
