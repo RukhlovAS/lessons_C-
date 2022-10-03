@@ -49,7 +49,7 @@ void Zadacha15(){
     }
 }
 
-Zadacha10();
+//Zadacha10();
 //Zadacha13();
 //Zadacha15();
 
