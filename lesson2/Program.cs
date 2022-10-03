@@ -4,9 +4,16 @@ void Zadacha10(){
     Console.WriteLine("Задача 10:");
     Console.WriteLine("Введите трехзначное число:");
     int number = Convert.ToInt32(Console.ReadLine());
-    int numberA = number/100;
-    int numberB = number%10;
-    Console.WriteLine(numberA*10+numberB);
+    if (number > 99 && number < 1000){
+        int numberX = (number%100)/10;
+        Console.WriteLine($"{numberX} вторая цифра числа {number}");
+    }
+    else
+    {
+        Console.WriteLine($"число {number} не является трехзначным");
+    }
+    
+    
 }
 //Задача 13: Напишите программу, которая с помощью деления выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 void Zadacha13(){
@@ -42,7 +49,7 @@ void Zadacha15(){
     }
 }
 
-//Zadacha10();
+Zadacha10();
 //Zadacha13();
-Zadacha15();
+//Zadacha15();
 
