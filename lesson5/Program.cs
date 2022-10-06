@@ -45,7 +45,7 @@ double[] FillRandomDoubleArray(){
     double[] arr = new double[size];
     for (int i = 0; i < size; i++)
     {
-        arr[i] = rand.NextDouble()*1000000;
+        arr[i] = rand.NextDouble()*rand.Next(-100000,100000);
     }
     return arr;
 }
