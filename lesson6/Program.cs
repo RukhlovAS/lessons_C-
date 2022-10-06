@@ -33,7 +33,8 @@ void Zadacha41(){
 //Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
 void Zadacha43(){
     Random rand = new Random();
-    int k1 = rand.Next(-10,10), k2 = rand.Next(-10,10), b1 = rand.Next(-10,10), b2 = rand.Next(-10,10);
+    //int k1 = rand.Next(-10,10), k2 = rand.Next(-10,10), b1 = rand.Next(-10,10), b2 = rand.Next(-10,10);
+    double k1 = 5, k2 = 9, b1 = 2, b2 = 4;
     double resultX = (b2 - b1) / (k1-k2);
     double resultY = k1*resultX + b1;
     Console.WriteLine($"точка A ({resultX},{resultY}) является точкой пересечения функции y ={k1}x + {b1} с функцией y ={k2}x + {b2}"); 
